@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FEROX Fitness - Premium Fitness Gear & Equipment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Poppins:wght@600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -309,6 +310,39 @@
             <p>&copy; 2025 FEROX Fitness. All rights reserved. Built for champions.</p>
         </div>
     </footer>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer" aria-hidden="true">
+        <div class="cart-header">
+            <h3>Cart</h3>
+            <button class="cart-close" aria-label="Close cart">✕</button>
+        </div>
+        <div class="cart-body">
+            <div class="cart-items"></div>
+            <div class="cart-empty">Your cart is empty.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">Total: <span class="cart-total-amount">$0.00</span></div>
+            <button class="btn btn-primary checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div class="product-modal" aria-hidden="true">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">✕</button>
+            <div class="modal-body">
+                <div class="modal-image placeholder-img"></div>
+                <div class="modal-info">
+                    <h3 class="modal-title"></h3>
+                    <p class="modal-price"></p>
+                    <p class="modal-desc"></p>
+                    <button class="btn btn-primary modal-add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 
