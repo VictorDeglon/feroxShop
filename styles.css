@@ -150,6 +150,16 @@ body {
     transition: var(--transition);
 }
 
+.hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 /* ========================================
    Hero Section
    ======================================== */
@@ -161,7 +171,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 50%, #1a0a0a 100%);
+    background:
+        linear-gradient(135deg, rgba(10,10,10,0.85) 0%, rgba(15,6,6,0.8) 50%, rgba(10,3,3,0.9) 100%),
+        url('https://images.unsplash.com/photo-1517960413843-5a8e6f3f0a3b?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
     overflow: hidden;
     border-bottom: 3px solid var(--color-primary);
 }
